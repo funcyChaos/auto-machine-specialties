@@ -1,8 +1,19 @@
-.header-grid{
+header{
     display: flex;
     justify-content: center;
+
+    padding: 1rem 0;
 }
 
-article.content{
-    background-color: #ee1718;
+article.content {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-around;
+
+    hr{
+        border: none;
+        height: 2px;
+        background-color: #ee1718;
+        margin-bottom: 1rem;
+    }
 }

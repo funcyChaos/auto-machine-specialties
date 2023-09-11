@@ -1,3 +1,31 @@
+@use '../../variables/colors';
+
+.cards{
+	display: flex;
+	justify-content: space-around;
+
+	.card{
+		background-color: colors.$contrast;
+		text-align: center;
+		padding: 1rem;
+		border-radius: .5rem;
+
+		flex: 0 0 30rem;
+
+		.multi-img{
+			display: flex;
+			flex-direction: column;
+			img:first-child{
+				align-self: flex-start;
+			}
+			img:last-child{
+				align-self: flex-end;
+			}
+		}
+	}
+}
+
+
 .post-thumbnail{
 	width: 400px;
 
