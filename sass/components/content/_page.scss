@@ -1,3 +1,50 @@
+@use '../../variables/colors';
+
+.content{
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	word-spacing: .5rem;
+	margin: 2rem;
+
+	@media (max-width: 1000px){
+		font-size: 1.5rem;
+		word-spacing: .2rem;
+	}
+}
+
+.cards{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	.card{
+		background-color: colors.$contrast;
+		text-align: center;
+		padding: 1rem;
+		border-radius: .5rem;
+		flex: 0 1 30rem;
+
+		h2{
+			margin-bottom: 1rem;
+		}
+
+		.multi-img{
+			display: flex;
+			flex-direction: column;
+			img:first-child{
+				align-self: flex-start;
+			}
+			img:last-child{
+				align-self: flex-end;
+			}
+		}
+	}
+}
+
+
 .post-thumbnail{
 	width: 400px;
 
