@@ -1,5 +1,13 @@
 @use '../../variables/colors';
 
+.content{
+	margin-top: 3rem;
+	text-align: center;
+	font-size: 2rem;
+	letter-spacing: .1rem;
+	word-spacing: .5rem;
+}
+
 .cards{
 	display: flex;
 	justify-content: space-around;
@@ -9,8 +17,11 @@
 		text-align: center;
 		padding: 1rem;
 		border-radius: .5rem;
-
 		flex: 0 0 30rem;
+
+		h2{
+			margin-bottom: 1rem;
+		}
 
 		.multi-img{
 			display: flex;
