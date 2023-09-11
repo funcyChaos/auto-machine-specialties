@@ -1,3 +1,5 @@
+@use '../../variables/colors';
+
 header{
     display: flex;
     justify-content: center;
@@ -5,11 +7,23 @@ header{
     padding: 1rem 0;
 }
 
-article {
+article{
     hr{
         border: none;
         height: 2px;
-        background-color: #ee1718;
+        background-color: colors.$accent;
         margin-bottom: 1rem;
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    i{
+        font-size: 5rem;
+    }
+    a{
+        color: colors.$foreground;
     }
 }
