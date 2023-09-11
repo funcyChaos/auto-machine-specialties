@@ -11,7 +11,7 @@
 		color: colors.$accent;
 	}
 
-	@media (max-width: 1000px){
+	@media(max-width: 1000px){
 		font-size: 1.5rem;
 		word-spacing: .2rem;
 	}
@@ -27,12 +27,19 @@
 		background-color: colors.$contrast;
 		text-align: center;
 		padding: 1rem;
+		margin: 0 1rem;
 		border-radius: .5rem;
 		flex: 0 1 30rem;
 
 		h2{
 			margin-bottom: 1rem;
 		}
+
+		img{max-width: 500px;}
+
+		@media(max-width: 1100px){img{max-width: 400px;}}
+		@media(max-width: 550px){img{max-width: 300px;}}
+		@media(max-width: 350px){img{max-width: 250px;}}
 
 		.multi-img{
 			display: flex;
