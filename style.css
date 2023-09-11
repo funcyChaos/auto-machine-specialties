@@ -1,0 +1,134 @@
+/*!
+Theme Name: Auto Machine Specialties
+Theme URI: http://underscores.me/
+Author: funcyChaos
+Author URI: http://funcychaos.com
+Description: A theme to run the Auto Machine Specialties website
+Version: 1.0.0
+Tested up to: 5.4
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: auto-machine-specialties
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned.
+
+Auto Machine Specialties is based on Underscores https://underscores.me/, (C) 2012-2020 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+@font-face {
+  font-family: AmcapEternal-xK95;
+  src: url(./font/AmcapEternal-xK95.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #1e1e1e;
+  color: white;
+  font-family: AmcapEternal-xK95;
+}
+
+.mb-1 {
+  margin-bottom: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+article hr {
+  border: none;
+  height: 2px;
+  background-color: #ee1718;
+  margin-bottom: 1rem;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+footer i {
+  font-size: 5rem;
+}
+footer a {
+  color: white;
+}
+
+.content {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  margin: 2rem;
+}
+@media (max-width: 1000px) {
+  .content {
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+  }
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.cards .card {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  flex: 0 1 30rem;
+}
+.cards .card h2 {
+  margin-bottom: 1rem;
+}
+.cards .card .multi-img {
+  display: flex;
+  flex-direction: column;
+}
+.cards .card .multi-img img:first-child {
+  align-self: flex-start;
+}
+.cards .card .multi-img img:last-child {
+  align-self: flex-end;
+}
+
+.post-thumbnail {
+  width: 400px;
+}
+.post-thumbnail img {
+  width: 100%;
+  height: auto;
+}
+
+.wp-block-group {
+  width: 80%;
+  text-shadow: 0.2rem 0.2rem 0.5rem black;
+  color: white;
+  font-weight: bolder;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  background-color: rgba(102, 102, 102, 0.8666666667);
+  border-radius: 0.3rem;
+  padding: 1rem;
+}
+.wp-block-group a {
+  color: white;
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
