@@ -73,6 +73,9 @@ footer a {
   word-spacing: 0.5rem;
   margin: 2rem;
 }
+.content a {
+  color: #ee1718;
+}
 @media (max-width: 1000px) {
   .content {
     font-size: 1.5rem;
