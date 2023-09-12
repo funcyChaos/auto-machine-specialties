@@ -46,13 +46,13 @@ header {
   padding: 1rem 0;
 }
 
-article hr {
+main hr {
   border: none;
   height: 2px;
   background-color: #ee1718;
   margin-bottom: 1rem;
 }
-article .content {
+main .content {
   margin-top: 3rem;
   text-align: center;
   font-size: 2rem;
@@ -60,22 +60,22 @@ article .content {
   word-spacing: 0.5rem;
   margin: 2rem;
 }
-article .content a {
+main .content a {
   color: #ee1718;
 }
 @media (max-width: 1000px) {
-  article .content {
+  main .content {
     font-size: 1.5rem;
     word-spacing: 0.2rem;
   }
 }
-article .cards {
+main .cards {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   gap: 1rem;
 }
-article .cards .card {
+main .cards .card {
   background-color: black;
   text-align: center;
   padding: 1rem;
@@ -83,35 +83,35 @@ article .cards .card {
   border-radius: 0.5rem;
   flex: 0 1 30rem;
 }
-article .cards .card h2 {
+main .cards .card h2 {
   margin-bottom: 1rem;
 }
-article .cards .card img {
+main .cards .card img {
   max-width: 500px;
 }
 @media (max-width: 1100px) {
-  article .cards .card img {
+  main .cards .card img {
     max-width: 400px;
   }
 }
 @media (max-width: 550px) {
-  article .cards .card img {
+  main .cards .card img {
     max-width: 300px;
   }
 }
 @media (max-width: 350px) {
-  article .cards .card img {
+  main .cards .card img {
     max-width: 250px;
   }
 }
-article .cards .card .multi-img {
+main .cards .card .multi-img {
   display: flex;
   flex-direction: column;
 }
-article .cards .card .multi-img img:first-child {
+main .cards .card .multi-img img:first-child {
   align-self: flex-start;
 }
-article .cards .card .multi-img img:last-child {
+main .cards .card .multi-img img:last-child {
   align-self: flex-end;
 }
 
