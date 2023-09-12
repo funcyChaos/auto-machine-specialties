@@ -52,10 +52,73 @@ article hr {
   background-color: #ee1718;
   margin-bottom: 1rem;
 }
+article .content {
+  margin-top: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.5rem;
+  margin: 2rem;
+}
+article .content a {
+  color: #ee1718;
+}
+@media (max-width: 1000px) {
+  article .content {
+    font-size: 1.5rem;
+    word-spacing: 0.2rem;
+  }
+}
+article .cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+article .cards .card {
+  background-color: black;
+  text-align: center;
+  padding: 1rem;
+  margin: 0 1rem;
+  border-radius: 0.5rem;
+  flex: 0 1 30rem;
+}
+article .cards .card h2 {
+  margin-bottom: 1rem;
+}
+article .cards .card img {
+  max-width: 500px;
+}
+@media (max-width: 1100px) {
+  article .cards .card img {
+    max-width: 400px;
+  }
+}
+@media (max-width: 550px) {
+  article .cards .card img {
+    max-width: 300px;
+  }
+}
+@media (max-width: 350px) {
+  article .cards .card img {
+    max-width: 250px;
+  }
+}
+article .cards .card .multi-img {
+  display: flex;
+  flex-direction: column;
+}
+article .cards .card .multi-img img:first-child {
+  align-self: flex-start;
+}
+article .cards .card .multi-img img:last-child {
+  align-self: flex-end;
+}
 
 footer {
   display: flex;
   justify-content: center;
+  gap: 5rem;
   padding: 1rem;
 }
 footer i {
@@ -64,69 +127,16 @@ footer i {
 footer a {
   color: white;
 }
-
-.content {
-  margin-top: 3rem;
-  text-align: center;
-  font-size: 2rem;
-  letter-spacing: 0.1rem;
-  word-spacing: 0.5rem;
-  margin: 2rem;
-}
-.content a {
-  color: #ee1718;
-}
-@media (max-width: 1000px) {
-  .content {
-    font-size: 1.5rem;
-    word-spacing: 0.2rem;
-  }
-}
-
-.cards {
+footer .ig {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
   gap: 1rem;
+  align-items: center;
 }
-.cards .card {
-  background-color: black;
-  text-align: center;
-  padding: 1rem;
-  margin: 0 1rem;
-  border-radius: 0.5rem;
-  flex: 0 1 30rem;
-}
-.cards .card h2 {
-  margin-bottom: 1rem;
-}
-.cards .card img {
-  max-width: 500px;
-}
-@media (max-width: 1100px) {
-  .cards .card img {
-    max-width: 400px;
-  }
-}
-@media (max-width: 550px) {
-  .cards .card img {
-    max-width: 300px;
-  }
-}
-@media (max-width: 350px) {
-  .cards .card img {
-    max-width: 250px;
-  }
-}
-.cards .card .multi-img {
+footer .address {
   display: flex;
-  flex-direction: column;
-}
-.cards .card .multi-img img:first-child {
-  align-self: flex-start;
-}
-.cards .card .multi-img img:last-child {
-  align-self: flex-end;
+  gap: 1rem;
+  align-items: center;
+  line-height: 1.5rem;
 }
 
 .post-thumbnail {

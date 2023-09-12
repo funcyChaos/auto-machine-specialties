@@ -1,56 +1,97 @@
 @use '../../variables/colors';
 
-.content{
-	margin-top: 3rem;
-	text-align: center;
-	font-size: 2rem;
-	letter-spacing: .1rem;
-	word-spacing: .5rem;
-	margin: 2rem;
-	a{
-		color: colors.$accent;
+header{
+	display: flex;
+	justify-content: center;
+
+	padding: 1rem 0;
+}
+
+article{
+	hr{
+			border: none;
+			height: 2px;
+			background-color: colors.$accent;
+			margin-bottom: 1rem;
 	}
 
-	@media(max-width: 1000px){
-		font-size: 1.5rem;
-		word-spacing: .2rem;
+	.content{
+		margin-top: 3rem;
+		text-align: center;
+		font-size: 2rem;
+		letter-spacing: .1rem;
+		word-spacing: .5rem;
+		margin: 2rem;
+		a{
+			color: colors.$accent;
+		}
+	
+		@media(max-width: 1000px){
+			font-size: 1.5rem;
+			word-spacing: .2rem;
+		}
+	}
+	
+	.cards{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		gap: 1rem;
+	
+		.card{
+			background-color: colors.$contrast;
+			text-align: center;
+			padding: 1rem;
+			margin: 0 1rem;
+			border-radius: .5rem;
+			flex: 0 1 30rem;
+	
+			h2{
+				margin-bottom: 1rem;
+			}
+	
+			img{max-width: 500px;}
+	
+			@media(max-width: 1100px){img{max-width: 400px;}}
+			@media(max-width: 550px){img{max-width: 300px;}}
+			@media(max-width: 350px){img{max-width: 250px;}}
+	
+			.multi-img{
+				display: flex;
+				flex-direction: column;
+				img:first-child{
+					align-self: flex-start;
+				}
+				img:last-child{
+					align-self: flex-end;
+				}
+			}
+		}
 	}
 }
 
-.cards{
+footer{
 	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	gap: 1rem;
+	justify-content: center;
+	gap: 5rem;
+	padding: 1rem;
+	i{
+			font-size: 5rem;
+	}
+	a{
+			color: colors.$foreground;
+	}
 
-	.card{
-		background-color: colors.$contrast;
-		text-align: center;
-		padding: 1rem;
-		margin: 0 1rem;
-		border-radius: .5rem;
-		flex: 0 1 30rem;
-
-		h2{
-			margin-bottom: 1rem;
-		}
-
-		img{max-width: 500px;}
-
-		@media(max-width: 1100px){img{max-width: 400px;}}
-		@media(max-width: 550px){img{max-width: 300px;}}
-		@media(max-width: 350px){img{max-width: 250px;}}
-
-		.multi-img{
-			display: flex;
-			flex-direction: column;
-			img:first-child{
-				align-self: flex-start;
-			}
-			img:last-child{
-				align-self: flex-end;
-			}
-		}
+	.ig{
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+	}
+	.address{
+		display: flex;
+		gap: 1rem;
+		align-items: center;
+		line-height: 1.5rem;
 	}
 }
 
