@@ -73,8 +73,9 @@ article{
 footer{
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 	gap: 5rem;
-	height: 150px;
+	min-height: 150px;
 	i{
 			font-size: 5rem;
 	}
@@ -85,11 +86,15 @@ footer{
 	.ig{
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 1rem;
 	}
 	.address{
 		display: flex;
 		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 1rem;
 		line-height: 1.5rem;
 	}

@@ -118,8 +118,9 @@ article .cards .card .multi-img img:last-child {
 footer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 5rem;
-  height: 150px;
+  min-height: 150px;
 }
 footer i {
   font-size: 5rem;
@@ -129,13 +130,17 @@ footer a {
 }
 footer .ig {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 footer .address {
   display: flex;
-  gap: 1rem;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
   line-height: 1.5rem;
 }
 
