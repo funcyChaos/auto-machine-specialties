@@ -122,6 +122,11 @@ footer {
   gap: 5rem;
   min-height: 150px;
 }
+@media (max-width: 720px) {
+  footer {
+    padding-bottom: 3rem;
+  }
+}
 footer i {
   font-size: 5rem;
 }
