@@ -76,6 +76,7 @@ footer{
 	flex-wrap: wrap;
 	gap: 5rem;
 	min-height: 150px;
+	@media(max-width: 720px){padding-bottom: 3rem;}
 	i{
 			font-size: 5rem;
 	}
